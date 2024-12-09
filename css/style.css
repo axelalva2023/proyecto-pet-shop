@@ -128,6 +128,14 @@ box-shadow: -1px 10px 43px -7px rgba(0, 0, 0, 0.75);
     margin-bottom: 23px;
 
 }
+.formulario h2{
+    text-align: center;
+    background-color: #FFB200;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
 
 /*------------------------footer-------------*/
 footer a img{
@@ -160,4 +168,28 @@ footer ul{
 footer ul li{
     list-style: none;
     margin: 10px
+}
+
+/*------------------------------media queries--------------------*/
+
+@media screen and (max-width:850px){
+    .nosotros{
+        flex-direction: column;
+    }
+    .nosotros div{
+        width: 80%;
+        text-align: center;
+        margin: 50px;
+    }
+    .servicios{
+        flex-direction: column;
+    }
+    .servicios div{
+        width: 80%;
+        text-align: center;
+        margin: 50px;
+    }
+    .sticky-top {
+        position: static !important;
+    }
 }
