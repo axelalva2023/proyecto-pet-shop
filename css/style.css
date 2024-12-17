@@ -204,3 +204,15 @@ footer i {
         position: static !important;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .nosotros div img {
+        width: 80%;
+        /* Reducir el ancho de la imagen para pantallas más pequeñas */
+    }
+    .servicios div img {
+        width: 80%;
+        /* Reducir el ancho de la imagen para pantallas más pequeñas */
+    }
+    
+}
