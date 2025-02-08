@@ -31,33 +31,23 @@ function escribirEfecto() {
 
 escribirEfecto();
 
-const fotoCard1 =  document.getElementById("fotoCard1")
+function agregarEfectoCambioImagen(idElemento, imagenHover, imagenOriginal) {
+    const elemento = document.getElementById(idElemento);
+    
+    if (!elemento) return; // Verifica si el elemento existe
 
-fotoCard1.addEventListener("mouseenter", () =>{
-    fotoCard1.src = "./img/perro-hambre.jpg"
-})
+    elemento.addEventListener("mouseenter", () => {
+        elemento.src = imagenHover;
+    });
 
-fotoCard1.addEventListener("mouseleave", () => {
-    fotoCard1.src = "./img/carne-card.jpg"; // Imagen original o de reemplazo
-});
+    elemento.addEventListener("mouseleave", () => {
+        elemento.src = imagenOriginal;
+    });
+}
 
-const fotoCard2 =  document.getElementById("fotoCard2")
+// Aplicamos la función a cada imagen
+agregarEfectoCambioImagen("fotoCard1", "./img/perro-hambre.jpg", "./img/carne-card.jpg");
+agregarEfectoCambioImagen("fotoCard2", "./img/perro-hambre.jpg", "./img/pescado-card.jpg");
+agregarEfectoCambioImagen("fotoCard3", "./img/perro-hambre.jpg", "./img/pollo-card.jpg");
 
-fotoCard2.addEventListener("mouseenter", () =>{
-    fotoCard2.src = "./img/perro-hambre.jpg"
-})
-
-fotoCard2.addEventListener("mouseleave", () => {
-    fotoCard2.src = "./img/pescado-card.jpg"; // Imagen original o de reemplazo
-});
-
-const fotoCard3 =  document.getElementById("fotoCard3")
-
-fotoCard3.addEventListener("mouseenter", () =>{
-    fotoCard3.src = "./img/perro-hambre.jpg"
-})
-
-fotoCard3.addEventListener("mouseleave", () => {
-    fotoCard3.src = "./img/pollo-card.jpg"; // Imagen original o de reemplazo
-});
 
