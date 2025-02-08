@@ -180,35 +180,25 @@ footer i {
     color: #1A1A1D;
     font-size: 50px;
 }
+
+
 form{
+    padding-block: 20px;
+    border: 2px solid #1A1A1D;
     background-color:#FFB200;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    padding-block: 20px;
-    border: 2px solid salmon;
-    width: 500px;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
+
 form label input{
     padding: 10px;
     width: 100%;
     
     
 }
-form button{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
 
-}
-.button-container{
-    display: flex;
-    gap: 10px;
-}
 .button-container button{
     border-radius: 10px;
     padding: 5px;
